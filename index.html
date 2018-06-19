@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ideal Weight Calculator</title>
+	<meta charset="utf-8">
+    <style type="text/css">
+        .err {
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="background-color: #8C979F;">
+<div style="position: absolute; top:90px; left: 450px; height: 400px; width: 500px; " >
+<form name="calculator" id="calcform" style="border: 5px solid; height: 400px; width: 500px; position: relative; background-color: #561424;  ">
+<br>
+<br>
+<br>
+<div style="position: absolute; top: 60px; left: 100px; ">
+    <h1 style="color : grey ;">Ideal Weight Calculator </h1>
+	Hight : <input type="text" id="h_feet" name="feet" style="width: 80px;">
+	Feet <input type="text" id="h_inch" name="inch" style="width: 80px;">  Inches
+	<br>
+	<br>
+	<br>
+	Gender : <input type="radio" name="gender" id="m"  checked> Male
+	         <input type="radio" name="gender" id="f"> Female
+	<br>
+	<br>
+	<br>
+	Result : <input type="text" name="result" id="res" readonly>
+	<select name="unit" id="units" onchange="convert();">
+        <option value="kilo" id="k">Kilograms</option>
+        <option value="pound" id="p">Pounds</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <button  type="button" onclick="calculate();">
+    	Calculate
+    </button>
+    <button type="button" onclick="resett();">
+    	Clear
+    </button>
+    <br>
+    <br>
+    <div id="error" class="err" style="width: 250px;">
+    	
+    </div>
+
+</div>
+
+</form>
+</div>
+ <script src="js/script.js"></script>
+</body>
+</html>
